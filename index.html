@@ -58,8 +58,6 @@
             <h3 class="about__title">Sobre mi</h3>
             <p class="about__paragraph">Soy Ingeniero Industrial y Técnico Auxiliar Administrativo. Tengo experiencia en análisis de datos y procesos en plantas industriales, así como también en el área logística comercial E-commerce de empresas de telecomunicaciones. Poseo dominio en programas de modelado de procesos como FlexSim y Arena, paquete Office especialmente Microsoft Excel, GoogleDataStudio, Power BI, WolkvoxManager, Dyalogo 3cx, AppSheet, Python, R y Siigo Nube.</p>
             <p class="about__paragraph">Soy una persona respetuosa, honesta, empática, creativa, orientada al cumplimiento de objetivos y atención de detalles para la mejora de los procesos. Además, me gusta leer e investigar acerca de cosas nuevas e innovadoras para aplicarlas en mi deber como profesional.</p>
-            <!-- Si quieres, pon tú firma acá! -->
-            <img src="assets\signature.png">
         </div>
     </section>
 
@@ -224,6 +222,20 @@
 
         <div class="experience__box">
             <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+            <img class="experience__img" src="assets\pagina_alura.png">
+            <div class="experience__info-container">
+                <h2 class="experience__title">Página Alura</h2>
+                <h3 class="experience__text">Challenge Oracle</h3>
+                    <div class="experience__description">
+                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                            <span class="experience__repo"><a href="https://github.com/MayrenS95/Proyecto_Pagina_Alura"><button class="experiencia__botao--repo">Repositorio</button></a></span>
+                            <span class="experience__demo"><a href="https://proyecto-pagina-alura.vercel.app/"><button class="experience__botao--demo">Ver demo</button></a></span>
+                    </div>
+            </div>
+        </div>  
+
+        <div class="experience__box">
+            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
             <img class="experience__img" src="assets\barberia.png">
             <div class="experience__info-container">
                 <h2 class="experience__title">Barbería Alura</h2>
@@ -231,7 +243,7 @@
                     <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
                             <span class="experience__repo"><a href="https://github.com/MayrenS95/Barber-a_Alura_Practica"><button class="experiencia__botao--repo">Repositorio</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                            <span class="experience__demo"><a href="https://barber-a-alura-practica-ojll.vercel.app/"><button class="experience__botao--demo">Ver demo</button></a></span>
                     </div>
             </div>
         </div>  
@@ -248,11 +260,11 @@
                     <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
                     <h3 class="formcontato__subtext">Completa el siguiente formulario y me pondré en contacto contigo lo antes posible. </h3>
                     <form class="formcontato__form" name="form">
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                        <input class="formcontato__input" type="text" name="asunto" placeholder="Asunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
-                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
+                        <input  class="formcontato__input" id="nombre" type="text" name="nombre" placeholder="Nombre">
+                        <input  class="formcontato__input" id="email" type="email" name="email" placeholder="E-mail">
+                        <input  class="formcontato__input" id="asunto" type="text" name="asunto" placeholder="Asunto">
+                        <textarea  class="formcontato__textarea" id="mensaje" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
+                        <button type="submit" id="boton" class="formcontato__botao" onclick="validarFormulario();" disabled>Enviar mensaje</button>
                     </form>
                 </div>
             </div>

@@ -1,12 +1,4 @@
-/*CSS Reset / Normalize*/
-/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
-en las secciones señaladas */
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
-
 :root{
-    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F8F9F9 ;
    --cor-de-link: #138D75;
 }
@@ -26,18 +18,6 @@ a{
     text-decoration: none;
     color: var(--cor-de-link);
 }
-
-/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
-
-Lo que es el BEM?
-
-BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
-desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
-independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
-con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
-
-Enlace de la documentación oficial!
-https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
 
@@ -286,13 +266,10 @@ section.about{
     margin-top: 2.5rem;
 }
 
-.formcontato__subtext{
-    font-weight: lighter;
-}
-
 .formcontato__subtext {
-    margin-bottom: 0px;
+    margin-bottom: 2px;
     margin-top: 0px;
+    font-weight: lighter;
 }
 
 .formcontato__botao{
@@ -546,3 +523,63 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 }
 
+.formcontato__botao:hover{
+    background: greenyellow;
+    transform: scale(1.2);
+    color:white;
+}
+
+textarea:hover{
+    background: greenyellow;
+    transform: scale(1.2);
+    color:rgb(36, 67, 240);
+
+}
+input:hover{
+    background: greenyellow;
+    transform: scale(1.2);
+    color:rgb(36, 67, 240);
+
+}
+
+.experiencia__botao--repo:hover{
+    background: greenyellow;
+    transform: scale(1.2);
+    color:white;
+}
+.experience__botao--demo:hover{
+    background: white;
+    transform: scale(1.2);
+    color:greenyellow;
+
+}
+
+a:hover{
+    transform: scale(1.5);
+    color:greenyellow;
+    font-weight: bold;
+}
+
+.skills__img:hover{
+    transform: scale(1.5);
+}
+
+.hobbies__img:hover{
+    transform: scale(1.5);
+}
+
+.academic__courses__item__img:hover{
+    transform: scale(1.5);
+
+}
+
+.experience__img:hover{-webkit-transform:scale(0.5);transform:scale(0.5);
+transition: 3s;}
+.experience__img {overflow:hidden;}
+
+.title__profile:hover{
+    border-radius:30%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px greenyellow;
+    -webkit-box-shadow: 0px 0px 15px 15px greenyellow;
+    }
